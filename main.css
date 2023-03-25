@@ -1,0 +1,31 @@
+@media print {
+  body * {
+    visibility: hidden;
+  }
+  #print_area,
+  #print_area * {
+    visibility: visible;
+  }
+  #print_area {
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+}
+
+@media screen {
+  article : {
+    /* background-color: rgb(255,192,192); */
+    background-color: #cccccc !important;
+  }
+}
+
+
+@media print {
+body > div {
+visibility: hidden;
+}
+article#print_area {
+border:none;
+}
+}
